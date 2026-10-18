@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0.0",
+  "dataVersion": "2026.10.3",
+  "languages": [
+    {
+      "id": "html",
+      "name": "HTML",
+      "nativeName": "HTML",
+      "languageVersion": "HTML Living Standard",
+      "kind": "language"
+    },
+    {
+      "id": "css",
+      "name": "CSS",
+      "nativeName": "CSS",
+      "languageVersion": "CSS (Living Standard)",
+      "kind": "language"
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "nativeName": "자바스크립트",
+      "languageVersion": "ECMAScript 2024",
+      "kind": "language"
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "nativeName": "타입스크립트",
+      "languageVersion": "TypeScript 5.9",
+      "kind": "language"
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "nativeName": "파이썬",
+      "languageVersion": "3.12",
+      "kind": "language"
+    },
+    {
+      "id": "c",
+      "name": "C",
+      "nativeName": "C",
+      "languageVersion": "C17",
+      "kind": "language"
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "nativeName": "자바",
+      "languageVersion": "Java 21",
+      "kind": "language"
+    },
+    {
+      "id": "go",
+      "name": "Go",
+      "nativeName": "고",
+      "languageVersion": "Go 1.22",
+      "kind": "language"
+    },
+    {
+      "id": "rust",
+      "name": "Rust",
+      "nativeName": "러스트",
+      "languageVersion": "Rust 1.75 (2021 edition)",
+      "kind": "language"
+    },
+    {
+      "id": "sql",
+      "name": "SQL",
+      "nativeName": "SQL",
+      "languageVersion": "ANSI SQL (SQLite 3.45 로 실행 검증)",
+      "kind": "language"
+    },
+    {
+      "id": "common",
+      "name": "Common",
+      "nativeName": "공통 문자·기호",
+      "languageVersion": "-",
+      "kind": "shared"
+    }
+  ],
+  "files": [
+    "languages/html/tag.json",
+    "languages/html/attribute.json",
+    "languages/css/property.json",
+    "languages/css/selector.json",
+    "languages/css/at-rule.json",
+    "languages/css/function.json",
+    "languages/javascript/keyword.json",
+    "languages/javascript/operator.json",
+    "languages/javascript/function.json",
+    "languages/javascript/grammar.json",
+    "languages/python/keyword.json",
+    "languages/python/operator.json",
+    "languages/python/function.json",
+    "languages/python/grammar.json",
+    "languages/c/keyword.json",
+    "languages/c/preprocessor.json",
+    "languages/c/operator.json",
+    "languages/c/function.json",
+    "languages/c/type.json",
+    "languages/c/macro.json",
+    "languages/c/grammar.json",
+    "languages/java/keyword.json",
+    "languages/java/type.json",
+    "languages/java/method.json",
+    "languages/java/annotation.json",
+    "languages/java/operator.json",
+    "languages/java/grammar.json",
+    "languages/sql/keyword.json",
+    "languages/sql/function.json",
+    "languages/sql/constraint.json",
+    "languages/sql/type.json",
+    "languages/sql/operator.json",
+    "languages/sql/grammar.json",
+    "languages/typescript/keyword.json",
+    "languages/typescript/type.json",
+    "languages/typescript/operator.json",
+    "languages/typescript/grammar.json",
+    "languages/go/keyword.json",
+    "languages/go/builtin.json",
+    "languages/go/type.json",
+    "languages/go/operator.json",
+    "languages/go/function.json",
+    "languages/go/grammar.json",
+    "languages/rust/keyword.json",
+    "languages/rust/type.json",
+    "languages/rust/macro.json",
+    "languages/rust/operator.json",
+    "languages/rust/grammar.json",
+    "symbols/symbols.json"
+  ],
+  "conceptsFile": "concepts/concepts.json"
+}

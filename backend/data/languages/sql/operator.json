@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "1.0.0", "language": "sql", "type": "operator", "entryVersion": "1.0.0",
+  "entries": [
+    {"id":"sql.operator.equal","symbol":"=","name":"Equal","aliases":["같다","동등 비교","등호"],"category":"comparison","description":"두 값이 같은지 비교합니다. SQL에서 =는 비교 연산자이고, 값을 바꾸는 UPDATE의 SET에서는 대입으로 쓰입니다. NULL과의 비교는 IS NULL을 씁니다.","syntax":"A = B","examples":["SELECT name FROM users WHERE city = 'Seoul';"],"related":["sql.operator.not-equal","sql.keyword.is-null","javascript.operator.strict-equality"],"concepts":["concept.comparison"]},
+    {"id":"sql.operator.not-equal","symbol":"<>","name":"Not Equal","aliases":["같지 않다","부등호","다르다","!="],"category":"comparison","description":"두 값이 다르면 참. 표준 SQL 표기는 <>이고 대부분의 DB가 !=도 지원합니다. 어느 한쪽이 NULL이면 결과는 참이 아닙니다.","syntax":"A <> B","examples":["SELECT name FROM users WHERE city <> 'Seoul';"],"related":["sql.operator.equal","sql.keyword.is-null"],"concepts":["concept.comparison"]},
+    {"id":"sql.operator.concat","symbol":"||","name":"String Concatenation","aliases":["문자열 연결","이어 붙이기","CONCAT"],"category":"string","description":"문자열을 이어 붙입니다(표준 SQL, SQLite, PostgreSQL). MySQL에서는 기본 설정에서 ||가 OR이므로 CONCAT()을 씁니다. NULL이 섞이면 결과도 NULL입니다.","syntax":"A || B","examples":["SELECT name || ' (' || city || ')' FROM users;"],"related":["sql.function.coalesce","javascript.operator.addition"],"concepts":["concept.string"]},
+    {"id":"sql.operator.comment","symbol":"--","name":"Line Comment","aliases":["주석","한 줄 주석","코멘트","/* */"],"category":"comment","description":"-- 뒤부터 줄 끝까지를 주석으로 처리합니다. 여러 줄은 /* ... */를 씁니다. MySQL은 -- 뒤에 공백이 필요합니다.","syntax":"-- COMMENT\n/* COMMENT */","examples":["-- 모든 사용자 조회\nSELECT * FROM users; /* 끝 */"],"related":["common.symbol.hash","common.symbol.slash"],"concepts":["concept.comment"]}
+  ]
+}

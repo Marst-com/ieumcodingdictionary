@@ -1,0 +1,7 @@
+{
+  "schemaVersion": "1.0.0", "language": "c", "type": "macro", "entryVersion": "1.0.0",
+  "entries": [
+    {"id":"c.macro.null","symbol":"NULL","name":"NULL","aliases":["널","널 포인터","없음"],"category":"pointer","description":"어떤 객체도 가리키지 않는 널 포인터 상수. 포인터를 사용하기 전에 NULL인지 확인합니다.","syntax":"#include <stddef.h>\nTYPE *p = NULL;","examples":["int *p = NULL;\nif (p == NULL) { p = 0; }"],"related":["c.function.malloc","c.function.fopen","c.operator.dereference"],"concepts":["concept.null-value"]},
+    {"id":"c.macro.int-max","symbol":"INT_MAX","name":"INT_MAX","aliases":["정수 최댓값","limits"],"category":"limits","description":"int가 가질 수 있는 최댓값. 32비트 int에서는 2147483647입니다. INT_MIN, UINT_MAX 등도 limits.h에 있습니다.","syntax":"#include <limits.h>\nINT_MAX","examples":["int biggest = INT_MAX;"],"related":["c.keyword.int"],"concepts":["concept.data-type"]}
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "schemaVersion": "1.0.0",
+  "concepts": [
+    {
+      "id": "concept.function",
+      "name": "Function",
+      "aliases": [
+        "함수",
+        "함수 선언",
+        "메서드",
+        "function",
+        "def"
+      ],
+      "description": "이름을 붙여 재사용할 수 있는 코드 묶음. 입력(매개변수)을 받아 결과를 돌려줄 수 있습니다."
+    },
+    {
+      "id": "concept.variable",
+      "name": "Variable",
+      "aliases": [
+        "변수",
+        "상수",
+        "선언",
+        "variable"
+      ],
+      "description": "값을 이름에 연결해 저장하는 방법."
+    },
+    {
+      "id": "concept.conditional",
+      "name": "Conditional",
+      "aliases": [
+        "조건문",
+        "분기",
+        "if",
+        "조건"
+      ],
+      "description": "조건에 따라 실행할 코드를 고르는 문법."
+    },
+    {
+      "id": "concept.loop",
+      "name": "Loop",
+      "aliases": [
+        "반복문",
+        "반복",
+        "루프",
+        "loop"
+      ],
+      "description": "같은 코드를 여러 번 반복 실행하는 문법."
+    },
+    {
+      "id": "concept.class",
+      "name": "Class",
+      "aliases": [
+        "클래스",
+        "객체지향",
+        "class"
+      ],
+      "description": "데이터와 동작을 묶어 객체를 만들어 내는 설계도."
+    },
+    {
+      "id": "concept.comparison",
+      "name": "Comparison",
+      "aliases": [
+        "비교",
+        "동등 비교",
+        "비교 연산자",
+        "equality"
+      ],
+      "description": "두 값이 같은지, 큰지 작은지 비교하는 연산."
+    },
+    {
+      "id": "concept.module-import",
+      "name": "Module Import",
+      "aliases": [
+        "모듈",
+        "가져오기",
+        "임포트",
+        "import",
+        "include"
+      ],
+      "description": "다른 파일이나 라이브러리의 코드를 가져와 사용하는 방법."
+    },
+    {
+      "id": "concept.error-handling",
+      "name": "Error Handling",
+      "aliases": [
+        "예외 처리",
+        "에러 처리",
+        "오류 처리",
+        "try catch",
+        "exception"
+      ],
+      "description": "실행 중 발생한 오류를 잡아서 처리하는 방법."
+    },
+    {
+      "id": "concept.boolean-logic",
+      "name": "Boolean Logic",
+      "aliases": [
+        "논리 연산",
+        "논리 연산자",
+        "불리언",
+        "and or not"
+      ],
+      "description": "참/거짓 값을 조합하는 논리 연산."
+    },
+    {
+      "id": "concept.collection",
+      "name": "Collection",
+      "aliases": [
+        "배열",
+        "리스트",
+        "컬렉션",
+        "array",
+        "list"
+      ],
+      "description": "여러 값을 한 묶음으로 다루는 자료 구조와 그 처리 함수."
+    },
+    {
+      "id": "concept.return-value",
+      "name": "Return Value",
+      "aliases": [
+        "반환",
+        "리턴",
+        "반환값",
+        "return"
+      ],
+      "description": "함수가 호출한 쪽으로 결과를 돌려주는 방법."
+    },
+    {
+      "id": "concept.data-type",
+      "name": "Data Type",
+      "aliases": [
+        "자료형",
+        "데이터 타입",
+        "타입",
+        "type"
+      ],
+      "description": "값이 어떤 종류인지(정수, 문자열, 날짜 등)를 나타내는 분류."
+    },
+    {
+      "id": "concept.null-value",
+      "name": "Null Value",
+      "aliases": [
+        "널",
+        "없음",
+        "null",
+        "빈 값",
+        "none"
+      ],
+      "description": "\"값이 없음\"을 나타내는 특별한 값."
+    },
+    {
+      "id": "concept.string",
+      "name": "String",
+      "aliases": [
+        "문자열",
+        "스트링",
+        "string"
+      ],
+      "description": "글자들의 나열을 다루는 자료형과 그 처리 방법."
+    },
+    {
+      "id": "concept.comment",
+      "name": "Comment",
+      "aliases": [
+        "주석",
+        "코멘트",
+        "comment"
+      ],
+      "description": "실행되지 않고 사람이 읽기 위해 남기는 설명."
+    },
+    {
+      "id": "concept.inheritance",
+      "name": "Inheritance",
+      "aliases": [
+        "상속",
+        "extends",
+        "부모 클래스"
+      ],
+      "description": "기존 클래스의 속성과 동작을 이어받아 새 클래스를 만드는 방법."
+    },
+    {
+      "id": "concept.aggregation",
+      "name": "Aggregation",
+      "aliases": [
+        "집계",
+        "합계",
+        "누적",
+        "집계 함수",
+        "aggregate"
+      ],
+      "description": "여러 값을 하나로 합치는 연산(합계, 개수, 평균, 누적 등)."
+    },
+    {
+      "id": "concept.generics",
+      "name": "Generics",
+      "aliases": [
+        "제네릭",
+        "타입 매개변수",
+        "generic",
+        "템플릿"
+      ],
+      "description": "타입을 매개변수처럼 받아 여러 타입에 재사용할 수 있게 만드는 문법."
+    },
+    {
+      "id": "concept.interface",
+      "name": "Interface",
+      "aliases": [
+        "인터페이스",
+        "트레이트",
+        "규약",
+        "trait",
+        "protocol"
+      ],
+      "description": "타입이 가져야 할 메서드나 모양을 구현과 분리해 선언하는 규약."
+    },
+    {
+      "id": "concept.pointer-reference",
+      "name": "Pointer / Reference",
+      "aliases": [
+        "포인터",
+        "참조",
+        "레퍼런스",
+        "주소",
+        "pointer",
+        "reference"
+      ],
+      "description": "값을 직접 복사하지 않고 값이 있는 위치를 가리키는 방법."
+    },
+    {
+      "id": "concept.concurrency",
+      "name": "Concurrency",
+      "aliases": [
+        "동시성",
+        "비동기",
+        "병렬",
+        "async await",
+        "고루틴",
+        "스레드",
+        "concurrency"
+      ],
+      "description": "여러 작업을 겹쳐서(동시에) 진행하는 방법: 비동기 함수, 고루틴, 스레드 등."
+    }
+  ]
+}

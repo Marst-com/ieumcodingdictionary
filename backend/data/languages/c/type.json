@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "1.0.0", "language": "c", "type": "type", "entryVersion": "1.0.0",
+  "entries": [
+    {"id":"c.type.size-t","symbol":"size_t","name":"size_t","aliases":["사이즈 티","크기 타입"],"category":"integer","description":"객체의 크기나 배열 인덱스를 나타내는 부호 없는 정수 타입. sizeof와 strlen의 결과 타입입니다.","syntax":"#include <stddef.h>\nsize_t NAME;","examples":["size_t n = sizeof(int);"],"related":["c.keyword.sizeof","c.function.strlen","c.keyword.unsigned"],"concepts":["concept.data-type"]},
+    {"id":"c.type.int32-t","symbol":"int32_t","name":"int32_t","aliases":["고정 폭 정수","32비트 정수","stdint"],"category":"integer","description":"정확히 32비트 부호 있는 정수. 플랫폼에 상관없이 크기가 같아야 할 때 씁니다. uint8_t, int64_t 등도 있습니다.","syntax":"#include <stdint.h>\nint32_t NAME;","examples":["int32_t id = 42;"],"related":["c.keyword.int","c.type.size-t"],"concepts":["concept.data-type"]},
+    {"id":"c.type.bool","symbol":"bool","name":"bool","aliases":["불리언","참거짓 타입","stdbool"],"category":"boolean","description":"true/false 값을 담는 타입. C17에서는 stdbool.h를 포함해야 쓸 수 있습니다(C23부터는 키워드).","syntax":"#include <stdbool.h>\nbool NAME = true;","examples":["bool ok = true;"],"related":["c.keyword.if"],"concepts":["concept.boolean-logic","concept.data-type"]},
+    {"id":"c.type.file","symbol":"FILE","name":"FILE","aliases":["파일 포인터","스트림"],"category":"io","description":"파일 스트림을 나타내는 타입. 항상 FILE * 포인터 형태로 fopen에서 받아 씁니다.","syntax":"#include <stdio.h>\nFILE *NAME;","examples":["FILE *f = stdout;"],"related":["c.function.fopen","c.function.fclose"],"concepts":["concept.data-type"]}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "1.0.0", "language": "sql", "type": "type", "entryVersion": "1.0.0",
+  "entries": [
+    {"id":"sql.type.integer","symbol":"INTEGER","name":"INTEGER","aliases":["정수","INT","정수형"],"category":"numeric","description":"정수를 저장하는 자료형. 표준은 INTEGER(INT)이고, DBMS에 따라 SMALLINT, BIGINT 등 크기별 타입이 있습니다.","syntax":"COL INTEGER","examples":["CREATE TABLE t (qty INTEGER);"],"related":["sql.type.decimal","sql.constraint.primary-key"],"concepts":["concept.data-type"]},
+    {"id":"sql.type.varchar","symbol":"VARCHAR","name":"VARCHAR(n)","aliases":["가변 문자열","문자열 타입","문자 타입"],"category":"text","description":"최대 n글자의 가변 길이 문자열. 길이 제한이 없는 긴 글은 TEXT 계열을 씁니다. n의 단위(문자/바이트)는 DBMS마다 다릅니다.","syntax":"COL VARCHAR(N)","examples":["CREATE TABLE t (name VARCHAR(50));"],"related":["sql.type.integer","sql.function.length"],"concepts":["concept.string","concept.data-type"]},
+    {"id":"sql.type.decimal","symbol":"DECIMAL","name":"DECIMAL(p, s)","aliases":["고정 소수점","금액 타입","NUMERIC"],"category":"numeric","description":"전체 p자리, 소수 s자리의 정확한 십진수. 부동소수점 오차가 없어야 하는 금액에 씁니다(FLOAT는 오차가 생깁니다).","syntax":"COL DECIMAL(P, S)","examples":["CREATE TABLE t (price DECIMAL(10, 2));"],"related":["sql.type.integer","sql.function.round"],"concepts":["concept.data-type"]},
+    {"id":"sql.type.date","symbol":"DATE","name":"DATE","aliases":["날짜","날짜 타입"],"category":"datetime","description":"연-월-일을 저장하는 자료형. 시각까지 필요하면 TIMESTAMP(또는 DATETIME)를 씁니다. 표준 표기는 'YYYY-MM-DD'입니다.","syntax":"COL DATE","examples":["CREATE TABLE t (born DATE);\nINSERT INTO t VALUES ('2000-01-31');"],"related":["sql.function.max"],"concepts":["concept.data-type"]},
+    {"id":"sql.type.boolean","symbol":"BOOLEAN","name":"BOOLEAN","aliases":["불리언","참거짓","논리형"],"category":"logical","description":"참/거짓 값을 저장합니다. SQLite는 0/1 정수로, MySQL은 TINYINT(1)의 별칭으로 다룹니다.","syntax":"COL BOOLEAN","examples":["CREATE TABLE t (active BOOLEAN DEFAULT 1);"],"related":["sql.constraint.default"],"concepts":["concept.boolean-logic","concept.data-type"]}
+  ]
+}

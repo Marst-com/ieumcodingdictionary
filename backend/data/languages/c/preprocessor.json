@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "1.0.0", "language": "c", "type": "preprocessor", "entryVersion": "1.0.0",
+  "entries": [
+    {"id":"c.preprocessor.include","symbol":"#include","name":"#include","aliases":["헤더 포함","인클루드","include"],"category":"directive","description":"다른 파일의 내용을 그 자리에 복사해 넣습니다. <파일>은 시스템 헤더, \"파일\"은 프로젝트 헤더에 씁니다.","syntax":"#include <HEADER>\n#include \"FILE\"","examples":["#include <stdio.h>\n#include \"mylib.h\""],"related":["c.function.printf","c.preprocessor.ifndef"],"concepts":["concept.module-import"]},
+    {"id":"c.preprocessor.define","symbol":"#define","name":"#define","aliases":["매크로 정의","디파인","상수 매크로"],"category":"directive","description":"이름에 텍스트를 연결하는 매크로를 정의합니다. 컴파일 전에 단순 치환되므로 함수형 매크로는 인자를 괄호로 감싸야 안전합니다.","syntax":"#define NAME VALUE\n#define NAME(ARGS) EXPRESSION","examples":["#define MAX 100\n#define SQUARE(x) ((x) * (x))"],"related":["c.preprocessor.undef","c.keyword.const"],"concepts":["concept.variable"]},
+    {"id":"c.preprocessor.undef","symbol":"#undef","name":"#undef","aliases":["매크로 해제"],"category":"directive","description":"이전에 정의한 매크로를 해제합니다.","syntax":"#undef NAME","examples":["#define DEBUG 1\n#undef DEBUG"],"related":["c.preprocessor.define"],"concepts":[]},
+    {"id":"c.preprocessor.ifndef","symbol":"#ifndef","name":"#ifndef","aliases":["인클루드 가드","중복 포함 방지","include guard"],"category":"conditional","description":"매크로가 정의되어 있지 않을 때만 #endif까지를 컴파일합니다. 헤더 파일의 중복 포함을 막는 인클루드 가드에 쓰입니다.","syntax":"#ifndef NAME\n...\n#endif","examples":["#ifndef MYLIB_H\n#define MYLIB_H\nint add(int a, int b);\n#endif"],"related":["c.preprocessor.ifdef","c.preprocessor.define","c.preprocessor.include"],"concepts":["concept.conditional"]},
+    {"id":"c.preprocessor.ifdef","symbol":"#ifdef","name":"#ifdef","aliases":["조건부 컴파일","정의되어 있으면"],"category":"conditional","description":"매크로가 정의되어 있을 때만 #endif까지를 컴파일합니다. 디버그 코드 포함 여부 등에 씁니다.","syntax":"#ifdef NAME\n...\n#endif","examples":["#define DEBUG 1\n#ifdef DEBUG\nint debug_on = 1;\n#endif"],"related":["c.preprocessor.ifndef","c.preprocessor.define"],"concepts":["concept.conditional"]}
+  ]
+}

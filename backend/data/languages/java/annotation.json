@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "1.0.0", "language": "java", "type": "annotation", "entryVersion": "1.0.0",
+  "entries": [
+    {"id":"java.annotation.override","symbol":"@Override","name":"@Override","aliases":["오버라이드","재정의 표시"],"category":"compiler","description":"부모 클래스나 인터페이스의 메서드를 재정의한다고 표시합니다. 이름을 잘못 쓰면 컴파일러가 오류로 알려 줍니다.","syntax":"@Override\nTYPE METHOD(PARAMS) { ... }","examples":["class A {\n    @Override\n    public String toString() { return \"A\"; }\n}"],"related":["java.keyword.extends","java.type.object"],"concepts":["concept.inheritance"]},
+    {"id":"java.annotation.functional-interface","symbol":"@FunctionalInterface","name":"@FunctionalInterface","aliases":["함수형 인터페이스","람다 대상"],"category":"compiler","description":"추상 메서드가 정확히 하나인 인터페이스임을 컴파일러가 검사하게 합니다. 이런 인터페이스는 람다식으로 구현할 수 있습니다.","syntax":"@FunctionalInterface\ninterface NAME { TYPE METHOD(PARAMS); }","examples":["@FunctionalInterface\ninterface Op { int apply(int a, int b); }"],"related":["java.operator.arrow","java.keyword.interface"],"concepts":["concept.function"]},
+    {"id":"java.annotation.deprecated","symbol":"@Deprecated","name":"@Deprecated","aliases":["사용 중단","더 이상 사용 안 함"],"category":"compiler","description":"더 이상 사용하지 않기를 권장하는 요소임을 표시합니다. 사용하면 컴파일러가 경고합니다.","syntax":"@Deprecated\nTYPE NAME ...","examples":["class Old {\n    @Deprecated\n    void legacy() { }\n}"],"related":["java.annotation.override"],"concepts":[]}
+  ]
+}

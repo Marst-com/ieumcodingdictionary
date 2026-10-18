@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "1.0.0", "language": "java", "type": "operator", "entryVersion": "1.0.0",
+  "entries": [
+    {"id":"java.operator.arrow","symbol":"->","name":"Lambda Arrow","aliases":["람다","람다식","화살표"],"category":"function","description":"람다식의 매개변수와 본문을 구분합니다. 함수형 인터페이스를 짧게 구현할 때 씁니다(Java 8+).","syntax":"(PARAMS) -> EXPRESSION","examples":["Runnable r = () -> System.out.println(\"hi\");\njava.util.function.Function<Integer, Integer> f = n -> n * 2;"],"related":["java.annotation.functional-interface","javascript.operator.arrow","python.keyword.lambda"],"concepts":["concept.function"]},
+    {"id":"java.operator.method-reference","symbol":"::","name":"Method Reference","aliases":["메서드 참조","콜론 두 개"],"category":"function","description":"기존 메서드를 람다 대신 이름으로 가리킵니다. String::length는 s -> s.length()와 같습니다.","syntax":"CLASS::METHOD   OBJECT::METHOD","examples":["java.util.function.Function<String, Integer> len = String::length;"],"related":["java.operator.arrow","java.method.string-length"],"concepts":["concept.function"]},
+    {"id":"java.operator.equal","symbol":"==","name":"Equality / Reference Equality","aliases":["같다","동등 비교","참조 비교"],"category":"comparison","description":"기본형에서는 값을, 객체에서는 같은 객체(참조)를 가리키는지 비교합니다. 객체의 내용 비교는 equals()입니다.","syntax":"A == B","examples":["int a = 1;\nboolean same = (a == 1);"],"related":["java.method.string-equals","javascript.operator.strict-equality","python.operator.equal"],"concepts":["concept.comparison"]},
+    {"id":"java.operator.ternary","symbol":"?:","name":"Conditional (Ternary)","aliases":["삼항 연산자","조건 연산자"],"category":"conditional","description":"조건에 따라 두 값 중 하나를 선택하는 식. 조건은 boolean이어야 합니다.","syntax":"CONDITION ? A : B","examples":["int n = 5;\nString label = n > 3 ? \"큼\" : \"작음\";"],"related":["java.keyword.if","javascript.operator.ternary"],"concepts":["concept.conditional"]}
+  ]
+}
