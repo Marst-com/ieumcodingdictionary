@@ -1,0 +1,29 @@
+/* ---------- 상단 바 ---------- */
+.topbar {
+  position: sticky; top: 0; z-index: 30;
+  height: var(--topbar-h);
+  display: grid; grid-template-columns: 236px minmax(0, 1fr) auto; align-items: center; gap: 20px;
+  padding: 0 20px 0 18px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 10px 24px -20px rgba(124, 58, 237, .55);
+}
+.brand { display: flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; min-width: 0; }
+.brand-mark { height: 30px; width: auto; flex: none; }
+.brand-name { font-family: var(--font-serif); font-weight: 800; font-size: 16px; letter-spacing: -0.01em; white-space: nowrap; color: var(--blue-ink); }
+
+.searchbar { display: flex; align-items: center; gap: 10px; width: 100%; max-width: 860px; }
+.searchbox { position: relative; flex: 1; min-width: 0; }
+.account { display: flex; align-items: center; gap: 10px; justify-content: flex-end; min-width: 0; }
+
+/* ---------- 3단 레이아웃 (개발 도구처럼 각 열이 따로 스크롤) ---------- */
+.app {
+  display: grid;
+  grid-template-columns: 236px minmax(340px, 430px) minmax(0, 1fr);
+  height: calc(100vh - var(--topbar-h));
+  height: calc(100dvh - var(--topbar-h));
+}
+.sidebar, .results, .detail { min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+.sidebar { padding: 18px 12px 28px 14px; background: var(--soft); border-right: 1px solid var(--line); }
+.results { background: var(--panel); border-left: 1px solid var(--line); border-right: 1px solid var(--line); }
+.detail { background: var(--panel); position: relative; }

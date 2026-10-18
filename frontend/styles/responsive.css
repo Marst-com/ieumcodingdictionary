@@ -1,0 +1,53 @@
+@media (max-width: 1180px) {
+  .topbar { grid-template-columns: auto minmax(0, 1fr) auto; }
+  .app { grid-template-columns: 200px minmax(300px, 380px) minmax(0, 1fr); }
+  .detail-inner { padding: 22px 24px 48px; }
+}
+
+/* 태블릿/모바일: 단일 열 + 상세는 전체 화면 시트 */
+@media (max-width: 900px) {
+  :root { --topbar-h: 118px; }
+  .topbar { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "brand account" "search search"; row-gap: 8px; padding: 10px 14px; align-content: center; }
+  .brand { grid-area: brand; }
+  .account { grid-area: account; }
+  .searchbar { grid-area: search; max-width: none; }
+  .search-hint { display: none; }
+
+  .app { display: block; height: auto; }
+  .sidebar { overflow: visible; padding: 10px 12px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; background: var(--panel); border-bottom: 1px solid var(--line); }
+  .side-group { min-width: 0; }
+  .side-group + .side-group { margin-top: 0; }
+  .side-title { display: none; }
+  .side-list { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: thin; }
+  .side-item { width: auto; flex: none; border: 1px solid var(--line-strong); border-radius: 999px; padding: 5px 12px; font-size: 13.5px; }
+  .side-item[aria-pressed="true"] { border-color: var(--blue); }
+  .results { overflow: visible; border: 0; min-height: calc(100vh - var(--topbar-h) - 120px); }
+  .results-head { top: var(--topbar-h); }
+
+  .detail {
+    position: fixed; inset: 0; z-index: 60; background: var(--panel);
+    transform: translateY(102%); transition: transform .2s ease; overflow-y: auto; visibility: hidden;
+  }
+  body.has-detail { overflow: hidden; }
+  body.has-detail .detail { transform: none; visibility: visible; }
+  .detail-top {
+    display: flex; align-items: center; gap: 8px; position: sticky; top: 0; z-index: 3; height: 52px; padding: 0 10px;
+    background: rgba(255, 255, 255, .96); border-bottom: 1px solid var(--line);
+  }
+  .detail-top .btn { border: 0; font-size: 14px; }
+  .detail-inner { padding: 20px 16px 56px; }
+  .entry-head h1.headword { font-size: 32px; }
+  .detail-inner { padding: 20px 16px 56px; }
+  .explore { padding: 24px 16px; }
+}
+
+@media (max-width: 520px) {
+  :root { --topbar-h: 164px; }
+  .searchbar { flex-direction: column; align-items: stretch; gap: 8px; }
+  .mode-tabs { display: grid; grid-template-columns: 1fr 1fr; }
+  .brand-name { display: none; }
+  .ctx > div { grid-template-columns: 1fr; gap: 2px; }
+  .impl-group { grid-template-columns: 1fr; gap: 2px; }
+  .result { grid-template-columns: 68px minmax(0, 1fr); }
+  .tile { width: 68px; }
+}
